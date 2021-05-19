@@ -3,6 +3,7 @@ inoremap fj <Esc>
 
 " some global vars that might differ from machine to machine...
 let g:rwt_blog = '~/Documents/ghio_pages'
+let g:rwt_journal = '~/Documents/journal'
 
 " General settings for defaults
 set nocompatible
@@ -23,6 +24,7 @@ let g:markdown_folding = 1
 
 " some global mappings....
 nnoremap <leader>ev :edit $MYVIMRC<cr>
+execute "nnoremap <leader>ei :edit " .. g:rwt_journal .. "/00_index.txt<cr>"
 
 " some setup for blog posts
 " Easy access to blog post directories
